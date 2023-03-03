@@ -6,3 +6,6 @@ No JavaScript.
 Demo here:
 
 http://icodethis.dreamland.ro/responsive-image-gallery-lightbox/
+
+CodePen:
+https://codepen.io/neluttu/pen/poOPBGg
