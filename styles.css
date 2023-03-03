@@ -1,0 +1,115 @@
+body, html {
+    background-color: #f6f6f6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1053%26quot%3b)' fill='none'%3e%3crect width='2560' height='1440' x='0' y='0' fill='rgba(224%2c 228%2c 233%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c776.642C169.841%2c806.526%2c350.882%2c862.311%2c506.734%2c788.493C667.532%2c712.332%2c750.311%2c537.823%2c834.806%2c381.243C924.499%2c215.029%2c1076.997%2c31.521%2c1010.638%2c-145.308C941.655%2c-329.127%2c655.394%2c-308.253%2c521.995%2c-452.311C395.913%2c-588.467%2c449.962%2c-875.172%2c275.705%2c-938.964C105.117%2c-1001.413%2c-40.104%2c-780.592%2c-211.673%2c-720.893C-371.387%2c-665.32%2c-582.471%2c-728.467%2c-694.161%2c-601.494C-805.793%2c-474.587%2c-750.209%2c-276.971%2c-750.836%2c-107.954C-751.379%2c38.286%2c-759.931%2c186.291%2c-697.575%2c318.572C-635.645%2c449.948%2c-525.183%2c548.567%2c-403.777%2c628.289C-281.442%2c708.622%2c-144.139%2c751.281%2c0%2c776.642' fill='%23d0d6de'%3e%3c/path%3e%3cpath d='M2560 2132.2619999999997C2732.041 2148.593 2905.959 2296.13 3060.514 2218.815 3212.891 2142.59 3222.62 1929.536 3283.423 1770.376 3340.21 1621.729 3442.607 1473.066 3404.42 1318.591 3366.732 1166.137 3204.494 1087.9279999999999 3088.5370000000003 982.02 2986.784 889.085 2893.659 789.657 2766.678 736.119 2628.444 677.836 2478.362 630.75 2331.847 662.981 2180.95 696.176 2044.199 789.454 1953.998 914.896 1867.409 1035.314 1871.0990000000002 1191.142 1846.848 1337.464 1822.013 1487.314 1761.165 1638.659 1810.22 1782.413 1861.1019999999999 1931.52 1974.269 2062.638 2117.042 2129.256 2253.614 2192.9809999999998 2409.966 2118.02 2560 2132.2619999999997' fill='%23f0f2f4'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1053'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1rem;
+    color: cornflowerblue;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 10px;
+}
+
+    .gallery a {
+        cursor: zoom-in;
+        transition: filter 0.2s ease-in-out;
+    }
+
+    .gallery > div:nth-child(odd) {
+        aspect-ratio: 1;
+    }
+
+    .gallery > div:nth-child(odd) img {
+        width: 0;
+        height: 0;
+        display: block;
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 100%;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 17px -14px rgba(0,0,0,0.68); 
+        box-shadow: 0px 0px 17px -14px rgba(0,0,0,0.68);
+        transition: all .3s ease;
+    }
+
+    .gallery > div:nth-child(odd) img:hover {
+        transform: scale(1.06);
+    }
+
+.lightbox {
+background: rgba(0, 0, 0, 0.8);
+display: none;
+position: fixed;
+z-index: 1000;
+overflow-y: hidden;
+}
+
+    .lightbox:target {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow-y: hidden;
+    }
+
+    .lightbox img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    cursor: zoom-out;
+
+    }
+
+    .lightbox .close {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    height: 1em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 1em;
+    z-index: 1001;
+    transition: all .3s ease;
+    }
+
+    /* Style lightbox caption  */
+    .lightbox p {
+    font-size: 0.9em;
+    font-weight: normal;
+    text-align: left;
+    color: white;
+    border-top: 3px solid white;
+    padding-top: 10px;
+    }
+
+/* Lightbox image div  */
+.lightbox > div {
+    width: auto;
+    padding: 10px;
+}

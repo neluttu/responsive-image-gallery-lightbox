@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML CSS responsive image gallery with lightbox</title>
+    <link href="styles.css" rel="text/css" type="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <br>
+    <h1>Simple HTML CSS responsive image gallery with lightbox</h1>
+    <br>
+    <!-- main gallery div -->
+    <div class="gallery">
+
+        <!-- gallery item unique ID (first parent div) needed (#img01) -->
+        <div>
+            <a href="#img01"><img src="https://picsum.photos/1024/768" loading="lazy" alt=""></a>
+        </div>
+        <!-- lightbox div for unique ID (#img01) -->
+        <div class="lightbox" id="img01">
+            <!-- this is the close lightbox button -->
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1024/768" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+        <!-- !important: the above two parent DIVs come in pairs! -->
+
+        <div>
+            <a href="#img02"><img src="https://picsum.photos/1280/1024" loading="lazy" alt=""></a>
+        </div>
+        <div class="lightbox" id="img02">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1280/1024" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img03"><img src="https://picsum.photos/800/600" loading="lazy" alt=""></a>
+        </div>
+        <div class="lightbox" id="img03">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/800/600" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img04"><img src="https://picsum.photos/1000/1000" loading="lazy" alt=""></a>
+        </div>
+        <div class="lightbox" id="img04">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1000/1000" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img05"><img src="https://picsum.photos/1680/1440" loading="lazy" alt=""></a>
+        </div>
+        <div class="lightbox" id="img05">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1680/1440" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img06"><img src="https://picsum.photos/1024/1024" loading="lazy" alt=""></a>
+        </div>
+        <div class="lightbox" id="img06">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1024/1024" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img07"><img src="https://picsum.photos/1360/600" loading="lazy"></a>
+        </div>
+        <div class="lightbox" id="img07">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1360/600" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img08"><img src="https://picsum.photos/1660/600" loading="lazy"></a>
+        </div>
+        <div class="lightbox" id="img08">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1660/600" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img09"><img src="https://picsum.photos/1240/1440" loading="lazy" alt=""></a>
+        </div>
+        <div class="lightbox" id="img09">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1240/1440" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img10"><img src="https://picsum.photos/1000/1024" loading="lazy" alt=""></a>
+        </div>
+        <div class="lightbox" id="img10">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1000/1024" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img11"><img src="https://picsum.photos/1440/600" loading="lazy"></a>
+        </div>
+        <div class="lightbox" id="img11">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/1440/600" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="#img12"><img src="https://picsum.photos/980/600" loading="lazy"></a>
+        </div>
+        <div class="lightbox" id="img12">
+            <a href="#" class="close">&times;</a>
+            <div>
+                <a href="#"><img src="https://picsum.photos/980/600" loading="lazy" alt=""></a>
+                <p>This is my image</p>
+            </div>
+        </div>
+
+      </div>
+</body>
+</html>
