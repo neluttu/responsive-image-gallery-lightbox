@@ -59,7 +59,7 @@ h1 {
     }
 
 .lightbox {
-background: rgba(0, 0, 0, 0.8);
+background: rgba(0, 0, 0, 0.90);
 display: none;
 position: fixed;
 z-index: 1000;
